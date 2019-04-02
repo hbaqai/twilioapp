@@ -42,10 +42,10 @@ If you would like to receive replies to your SMS, you will need to configure fol
 
 To send an sms go to the url:
 
-`https://automatic-twilio.herokuapp.com/customer`
+`https://your-fully-qualified-domain.com/customer`
 
 Replies to to the SMS received will go to a webhook if you confired it. You can check on all replies if you visit:
 
-`https://automatic-twilio.herokuapp.com/replies`
+`https://your-fully-qualified-domain/replies`
 
 Each JSON object in the array corresponds to a single message reply. Look in the `body` field of each JSON object to see the text that was sent.
