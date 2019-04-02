@@ -13,8 +13,11 @@ Lastly, It provdes a URL to display all reply messages.
 In order to run this application, you must set the following environment variables:
 
 `TWILIO_ACCOUNT_SID` - your Twilio account ID. You will need to sign up with Twilio to obtain one.
+
 `TWILIO_AUTH_TOKEN` - your Twilio auth token
+
 `FROM_NUMBER` - The Twilio phone number to send a message from
+
 `TO_NUMBER` - The mobile phone number to send the message to
 
 ### Running locally
