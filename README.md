@@ -20,6 +20,12 @@ In order to run this application, you must set the following environment variabl
 
 `TO_NUMBER` - The mobile phone number to send the message to
 
+### Configuration on Twilio's Dashboard (optional)
+
+If you would like to receive replies to your SMS, you will need to configure following webhook URL in your Twilio Dashboard:
+
+`https://your-fully-qualified-domain/replies`
+
 ### Running locally
 
 1. Clone the repository: `git clone git@github.com:hbaqai/twilioapp.git`
@@ -31,3 +37,15 @@ In order to run this application, you must set the following environment variabl
 4. Make sure your environment variables are set. Alternatively, copy the `.envcopy` file and rename it to `.env`. In the new `.env` file, set your environment variables. Seperate the key and value with an equal sign (ex: `FROM_NUMBER=+14152223333`), one variable on each line.
 
 5. Run the server: `node bin/www`
+
+### Usage
+
+To send an sms go to the url:
+
+`https://automatic-twilio.herokuapp.com/customer`
+
+Replies to to the SMS received will go to a webhook if you confired it. You can check on all replies if you visit:
+
+`https://automatic-twilio.herokuapp.com/replies`
+
+Each JSON object in the array corresponds to a single message reply. Look in the `body` field of each JSON object to see the text that was sent.
