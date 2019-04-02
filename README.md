@@ -22,7 +22,7 @@ In order to run this application, you must set the following environment variabl
 
 ### Configuration on Twilio's Dashboard (optional)
 
-If you would like to receive replies to your SMS, you will need to configure following webhook URL in your Twilio Dashboard:
+If you would like to receive replies to your SMS, you will need to configure following webhook URL in your Twilio Dashboard under your [phone number](https://www.twilio.com/console/phone-numbers/incoming):
 
 `https://your-fully-qualified-domain/replies`
 
